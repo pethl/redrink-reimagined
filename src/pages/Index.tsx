@@ -5,17 +5,12 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 
 const featuredProducts = [
-  { name: "KeepCup", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/164/972/Untitled-8__75853.1594635668.jpg?c=1" },
-  { name: "Stainless Steel Geo 500ml", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/158/853/622898__32954.1580295439.jpg?c=1" },
   { name: "Ecoffee Cup", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/139/589/EcoffeeGroupLogo__30320.1579030218.jpg?c=1" },
   { name: "Stainless Steel Special 500ml", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/126/410/569498__43195.1578409146.jpg?c=1" },
-];
-
-const popularProducts = [
-  { name: "The Phil Morgan Bottle", price: "£30.00", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/119/953/beach2-bottle__94396.1592819560.jpg?c=1" },
-  { name: "School Bottle - Recycled", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/167/1000/KidsPic__02281.1600078288.jpg?c=1" },
   { name: "Barista Café Glass Cup 12oz", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/166/993/OLD488-Cafe-glass-cup-black__95378.1596464290.jpg?c=1" },
   { name: "Takeout Bamboo Double Walled", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/165/986/126272a__84234.1594895155.jpg?c=1" },
+  { name: "The Phil Morgan Bottle", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/119/953/beach2-bottle__94396.1592819560.jpg?c=1" },
+  { name: "School Bottle - Recycled", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/167/1000/KidsPic__02281.1600078288.jpg?c=1" },
 ];
 
 const values = [
@@ -121,33 +116,6 @@ const Index = () => (
       </div>
     </section>
 
-    {/* Most Popular */}
-    <section className="py-16 md:py-20 bg-section-alt">
-      <div className="container">
-        <h2 className="font-display text-3xl font-bold text-center mb-10">Most Popular</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {popularProducts.map((p, i) => (
-            <motion.div
-              key={p.name}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp}
-              className="group bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow"
-            >
-              <div className="aspect-[3/4] overflow-hidden bg-muted">
-                <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              </div>
-              <div className="p-4">
-                <h3 className="font-body font-medium text-sm">{p.name}</h3>
-                {p.price && <p className="text-primary font-semibold text-sm mt-1">{p.price}</p>}
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
 
     {/* CTA */}
     <section className="py-16 md:py-24 bg-primary text-primary-foreground text-center">
