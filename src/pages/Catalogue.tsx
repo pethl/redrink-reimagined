@@ -1,0 +1,136 @@
+import { useState, useMemo } from "react";
+import { motion } from "framer-motion";
+import { Search } from "lucide-react";
+import Layout from "@/components/Layout";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+
+type Product = {
+  name: string;
+  brand: string;
+  category: string;
+  image: string;
+  price?: string;
+};
+
+const products: Product[] = [
+  { name: "KeepCup", brand: "KeepCup", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/164/972/Untitled-8__75853.1594635668.jpg?c=1" },
+  { name: "Stainless Steel Geo 500ml", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/158/853/622898__32954.1580295439.jpg?c=1" },
+  { name: "Ecoffee Cup", brand: "Ecoffee Cup®", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/139/589/EcoffeeGroupLogo__30320.1579030218.jpg?c=1" },
+  { name: "Stainless Steel Special 500ml", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/126/410/569498__43195.1578409146.jpg?c=1" },
+  { name: "The Phil Morgan Bottle", brand: "ReDrink", category: "Bottles", price: "£30.00", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/119/953/beach2-bottle__94396.1592819560.jpg?c=1" },
+  { name: "School Bottle - Recycled", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/167/1000/KidsPic__02281.1600078288.jpg?c=1" },
+  { name: "Barista Café Glass Cup 12oz", brand: "ReDrink", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/166/993/OLD488-Cafe-glass-cup-black__95378.1596464290.jpg?c=1" },
+  { name: "Takeout Bamboo Double Walled", brand: "ReDrink", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/165/986/126272a__84234.1594895155.jpg?c=1" },
+  { name: "Lake 600 ml", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/163/899/118590__87264.1583921992.jpg?c=1" },
+];
+
+const brands = ["All", ...Array.from(new Set(products.map((p) => p.brand)))];
+const categories = ["All", ...Array.from(new Set(products.map((p) => p.category)))];
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number) => ({ opacity: 1, y: 0, transition: { delay: i * 0.05, duration: 0.4 } }),
+};
+
+const Catalogue = () => {
+  const [search, setSearch] = useState("");
+  const [brand, setBrand] = useState("All");
+  const [category, setCategory] = useState("All");
+
+  const filtered = useMemo(() => {
+    return products.filter((p) => {
+      const matchSearch = p.name.toLowerCase().includes(search.toLowerCase());
+      const matchBrand = brand === "All" || p.brand === brand;
+      const matchCategory = category === "All" || p.category === category;
+      return matchSearch && matchBrand && matchCategory;
+    });
+  }, [search, brand, category]);
+
+  return (
+    <Layout>
+      <section className="py-16 md:py-24">
+        <div className="container">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-center mb-10">Catalogue</h1>
+          </motion.div>
+
+          {/* Filters */}
+          <div className="flex flex-wrap gap-4 mb-10 items-end">
+            <div className="relative flex-1 min-w-[200px]">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Input
+                placeholder="Search products..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="pl-10 font-body"
+              />
+            </div>
+
+            <div className="flex gap-2 flex-wrap">
+              {categories.map((c) => (
+                <Button
+                  key={c}
+                  variant={category === c ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setCategory(c)}
+                  className="font-body text-xs"
+                >
+                  {c}
+                </Button>
+              ))}
+            </div>
+
+            <div className="flex gap-2 flex-wrap">
+              {brands.map((b) => (
+                <Button
+                  key={b}
+                  variant={brand === b ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setBrand(b)}
+                  className="font-body text-xs"
+                >
+                  {b}
+                </Button>
+              ))}
+            </div>
+          </div>
+
+          {/* Products grid */}
+          {filtered.length === 0 ? (
+            <p className="text-center text-muted-foreground font-body py-12">No products match your filters.</p>
+          ) : (
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {filtered.map((p, i) => (
+                <motion.div
+                  key={p.name}
+                  custom={i}
+                  initial="hidden"
+                  animate="visible"
+                  variants={fadeUp}
+                  className="group bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow"
+                >
+                  <div className="aspect-[3/4] overflow-hidden bg-muted">
+                    <img
+                      src={p.image}
+                      alt={p.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <p className="text-xs text-muted-foreground font-body">{p.brand}</p>
+                    <h3 className="font-body font-medium text-sm mt-1">{p.name}</h3>
+                    {p.price && <p className="text-primary font-semibold text-sm mt-1">{p.price}</p>}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default Catalogue;
