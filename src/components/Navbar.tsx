@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/redrink-logo.jpg";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -18,9 +19,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-bold tracking-tight text-primary">
-            ReDrink
-          </span>
+          <img src={logo} alt="ReDrink" className="h-12 md:h-14 w-auto" />
         </Link>
 
         {/* Desktop nav */}
