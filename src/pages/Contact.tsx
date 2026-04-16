@@ -53,7 +53,7 @@ const Contact = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="font-display text-4xl md:text-5xl font-bold text-center mb-4">Contact Us</h1>
             <p className="text-center text-muted-foreground font-body max-w-xl mx-auto mb-12">
-              Do you have a question about any of our products? Looking for something you can't see? Unsure which product fits your need or which of the many branding options suits your logo?
+              Got a question about our products? Looking for something specific? Not sure which option or branding works best for you? Just ask.
             </p>
           </motion.div>
 
