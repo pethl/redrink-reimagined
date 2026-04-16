@@ -17,11 +17,6 @@ const heroSlides = [
     subtext: "Made from ocean-bound plastic. Every bottle sold helps clean our beaches and waterways.",
   },
   {
-    image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/139/589/EcoffeeGroupLogo__30320.1579030218.jpg?c=1",
-    headline: "Ecoffee Cup Range",
-    subtext: "Made from natural bamboo fibre. Beautifully branded reusable cups that replace hundreds of single-use cups.",
-  },
-  {
     image: "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=1280&q=80",
     headline: "The Plastic Problem",
     subtext: "8 million tonnes of plastic enter our oceans every year. Reusable drinkware is one of the simplest ways to make a difference.",
