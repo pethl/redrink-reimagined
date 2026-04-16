@@ -6,21 +6,45 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
-  const { toast } = useToast();
   const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    try {
+      const form = e.target as HTMLFormElement;
+      const res = await fetch("https://formspree.io/f/xvzdzboj", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      }
+    } catch {
+      // silent fail
+    } finally {
       setLoading(false);
-      toast({ title: "Message sent!", description: "We'll get back to you soon." });
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+    }
   };
+
+  if (submitted) {
+    return (
+      <Layout>
+        <section className="py-16 md:py-24">
+          <div className="container max-w-4xl text-center">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+              <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">Thanks!</h1>
+              <p className="text-muted-foreground font-body text-lg">We'll be in touch soon.</p>
+            </motion.div>
+          </div>
+        </section>
+      </Layout>
+    );
+  }
 
   return (
     <Layout>
@@ -73,28 +97,28 @@ const Contact = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="font-body text-sm">Full Name</Label>
-                  <Input id="name" placeholder="Your name" className="font-body" />
+                  <Input id="name" name="name" placeholder="Your name" className="font-body" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone" className="font-body text-sm">Phone Number</Label>
-                  <Input id="phone" type="tel" placeholder="Your phone" className="font-body" />
+                  <Input id="phone" name="phone" type="tel" placeholder="Your phone" className="font-body" />
                 </div>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="email" className="font-body text-sm">Email Address <span className="text-destructive">*</span></Label>
-                  <Input id="email" type="email" required placeholder="you@company.com" className="font-body" />
+                  <Input id="email" name="email" type="email" required placeholder="you@company.com" className="font-body" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="company" className="font-body text-sm">Company Name</Label>
-                  <Input id="company" placeholder="Your company" className="font-body" />
+                  <Input id="company" name="company" placeholder="Your company" className="font-body" />
                 </div>
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="message" className="font-body text-sm">Comments/Questions <span className="text-destructive">*</span></Label>
-                <Textarea id="message" required rows={5} placeholder="Tell us about your needs..." className="font-body resize-none" />
+                <Textarea id="message" name="message" required rows={5} placeholder="Tell us about your needs..." className="font-body resize-none" />
               </div>
 
               <Button type="submit" size="lg" disabled={loading} className="font-body font-semibold w-full sm:w-auto">
