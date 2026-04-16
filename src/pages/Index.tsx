@@ -14,7 +14,7 @@ const heroSlides = [
   {
     image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/119/953/beach2-bottle__94396.1592819560.jpg?c=1",
     headline: "The Phil Morgan Bottle",
-    subtext: "Made from ocean-bound plastic. Every bottle sold helps clean our beaches and waterways.",
+    subtext: "From our artist collaboration series. A celebration of creativity, made for everyday use.",
   },
   {
     image: "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=1280&q=80",
