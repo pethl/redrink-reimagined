@@ -97,28 +97,28 @@ const Contact = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="font-body text-sm">Full Name</Label>
-                  <Input id="name" placeholder="Your name" className="font-body" />
+                  <Input id="name" name="name" placeholder="Your name" className="font-body" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="phone" className="font-body text-sm">Phone Number</Label>
-                  <Input id="phone" type="tel" placeholder="Your phone" className="font-body" />
+                  <Input id="phone" name="phone" type="tel" placeholder="Your phone" className="font-body" />
                 </div>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="email" className="font-body text-sm">Email Address <span className="text-destructive">*</span></Label>
-                  <Input id="email" type="email" required placeholder="you@company.com" className="font-body" />
+                  <Input id="email" name="email" type="email" required placeholder="you@company.com" className="font-body" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="company" className="font-body text-sm">Company Name</Label>
-                  <Input id="company" placeholder="Your company" className="font-body" />
+                  <Input id="company" name="company" placeholder="Your company" className="font-body" />
                 </div>
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="message" className="font-body text-sm">Comments/Questions <span className="text-destructive">*</span></Label>
-                <Textarea id="message" required rows={5} placeholder="Tell us about your needs..." className="font-body resize-none" />
+                <Textarea id="message" name="message" required rows={5} placeholder="Tell us about your needs..." className="font-body resize-none" />
               </div>
 
               <Button type="submit" size="lg" disabled={loading} className="font-body font-semibold w-full sm:w-auto">
