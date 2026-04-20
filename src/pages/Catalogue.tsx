@@ -14,6 +14,7 @@ type Product = {
   category: string;
   image: string;
   price?: string;
+  description?: string;
 };
 
 const PLACEHOLDER = `${import.meta.env.BASE_URL}placeholder.svg`;
@@ -31,7 +32,7 @@ const products: Product[] = [
   { name: "Lake 600 ml", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/163/899/118590__87264.1583921992.jpg?c=1" },
 
   // ── Bottles · Single-walled ───────────────────────────────────────────────
-  { name: "CamelBak Chute Mag", brand: "Camelbak", category: "Bottles", image: camelbakChute },
+  { name: "CamelBak Chute Mag", brand: "Camelbak", category: "Bottles", image: camelbakChute, description: "Hydration made simple. Chute Mag delivers high flow without the mess. The universal cap features a magnetic top that stows securely out of the way when open, is leak-proof when closed, has an easy carry handle, and is compatible with Eddy+ and Hot Cap vessels. Lightweight, durable, and dishwasher safe. BPA, BPS, and BPF free. Available in 600ml, 750ml and 1L capacity. Your logo in a one colour print." },
   { name: "Shakermate Protein Shaker", brand: "Shakermate", category: "Bottles", image: PLACEHOLDER },
   { name: "Aluminium 770ml Sport Bottle with Carabiner", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
   { name: "Grip Sport Bottle 750 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
@@ -139,13 +140,18 @@ const Catalogue = () => {
                   variants={fadeUp}
                   className="group bg-card rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow"
                 >
-                  <div className="aspect-[3/4] overflow-hidden bg-muted">
+                  <div className="relative aspect-[3/4] overflow-hidden bg-muted">
                     <img
                       src={p.image}
                       alt={p.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
+                    {p.description && (
+                      <div className="absolute inset-0 bg-primary/90 text-primary-foreground p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center overflow-y-auto">
+                        <p className="font-body text-xs leading-relaxed">{p.description}</p>
+                      </div>
+                    )}
                   </div>
                   <div className="p-4">
                     <p className="text-xs text-muted-foreground font-body">{p.brand}</p>
