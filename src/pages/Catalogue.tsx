@@ -4,6 +4,7 @@ import { Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import tulipTumbler from "@/assets/tulip-tumbler.jpg";
 
 type Product = {
   name: string;
@@ -44,7 +45,7 @@ const products: Product[] = [
   { name: "Recycled Aluminium Drinks Bottle 350ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
 
   // ── Cups ──────────────────────────────────────────────────────────────────
-  { name: "Tulip Tumbler", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
+  { name: "Tulip Tumbler", brand: "ReDrink", category: "Cups", image: tulipTumbler },
   { name: "Black Steel Thermo Mug", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
   { name: "Americano® Tumbler", brand: "Americano®", category: "Cups", image: PLACEHOLDER },
   { name: "Ceramic Takeout", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
