@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import tulipTumbler from "@/assets/tulip-tumbler.jpg";
 import blackThermoMug from "@/assets/black-thermo-mug.jpg";
 import camelbakChute from "@/assets/camelbak-chute.jpg";
+import ceramicTakeout from "@/assets/ceramic-takeout.jpg";
 
 type Product = {
   name: string;
@@ -51,7 +52,7 @@ const products: Product[] = [
   { name: "Tulip Tumbler", brand: "ReDrink", category: "Cups", image: tulipTumbler },
   { name: "Black Steel Thermo Mug", brand: "ReDrink", category: "Cups", image: blackThermoMug },
   { name: "Americano® Tumbler", brand: "Americano®", category: "Cups", image: PLACEHOLDER },
-  { name: "Ceramic Takeout", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
+  { name: "Ceramic Takeout", brand: "ReDrink", category: "Cups", image: ceramicTakeout, description: "A double-walled, vacuum-sealed Takeaway coffee mug. Manufactured from traditional ceramic earthenware but with a contemporary shape and double-walled design. Supplied with press on lid." },
   { name: "Recycled Takeout Coffee Cup", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
 ];
 
