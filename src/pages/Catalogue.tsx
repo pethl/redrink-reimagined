@@ -26,7 +26,7 @@ const products: Product[] = [
   { name: "Stainless Steel Geo 500ml", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/158/853/622898__32954.1580295439.jpg?c=1" },
   { name: "Ecoffee Cup", brand: "Ecoffee Cup®", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/139/589/EcoffeeGroupLogo__30320.1579030218.jpg?c=1" },
   { name: "Stainless Steel Special 500ml", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/126/410/569498__43195.1578409146.jpg?c=1" },
-  { name: "The Phil Morgan Bottle", brand: "ReDrink", category: "Bottles", price: "£30.00", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/119/953/beach2-bottle__94396.1592819560.jpg?c=1" },
+  { name: "The Phil Morgan Bottle", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/119/953/beach2-bottle__94396.1592819560.jpg?c=1" },
   { name: "School Bottle - Recycled", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/167/1000/KidsPic__02281.1600078288.jpg?c=1" },
   { name: "Barista Café Glass Cup 12oz", brand: "ReDrink", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/166/993/OLD488-Cafe-glass-cup-black__95378.1596464290.jpg?c=1" },
   { name: "Takeout Bamboo Double Walled", brand: "ReDrink", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/165/986/126272a__84234.1594895155.jpg?c=1" },
@@ -34,9 +34,9 @@ const products: Product[] = [
 
   // ── Bottles · Single-walled ───────────────────────────────────────────────
   { name: "CamelBak Chute Mag", brand: "Camelbak", category: "Bottles", image: camelbakChute, description: "Hydration made simple. Chute Mag delivers high flow without the mess. The universal cap features a magnetic top that stows securely out of the way when open, is leak-proof when closed, has an easy carry handle, and is compatible with Eddy+ and Hot Cap vessels. Lightweight, durable, and dishwasher safe. BPA, BPS, and BPF free. Available in 600ml, 750ml and 1L capacity. Your logo in a one colour print." },
-  { name: "Shakermate Protein Shaker", brand: "Shakermate", category: "Bottles", image: PLACEHOLDER },
-  { name: "Aluminium 770ml Sport Bottle with Carabiner", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
-  { name: "Grip Sport Bottle 750 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Shakermate Protein Shaker", brand: "Shakermate", category: "Bottles", image: PLACEHOLDER, description: "Introducing Shakermate Full Colour - also available in spot colour. This 700ml/24oz Shakermate features an integrated mesh mixer, rounded inner base for easier cleaning, 10 mix & match lid and clip colours and displays capacity levels to either side in ml/oz. Print available front & back." },
+  { name: "Aluminium 770ml Sport Bottle with Carabiner", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER, description: "Aluminium sport bottle with carabiner. Single wall bottle with twist-on lid. BPA-free aluminium. Carabiner is not suitable for climbing.   Product Spec Sheet" },
+  { name: "Grip Sport Bottle 750 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER, description: "750 ml sport bottle. Single-walled bottle with twist-on lid. Center rubberized grip. Volume capacity is 750 ml. BPA-free aluminium." },
   { name: "Eco 650 ml Spout Lid Sport Bottle", brand: "H2O Active®", category: "Bottles", image: PLACEHOLDER },
 
   // ── Bottles · Double-walled ───────────────────────────────────────────────
