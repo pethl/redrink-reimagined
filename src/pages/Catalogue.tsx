@@ -13,7 +13,10 @@ type Product = {
   price?: string;
 };
 
+const PLACEHOLDER = `${import.meta.env.BASE_URL}placeholder.svg`;
+
 const products: Product[] = [
+  // ── Existing ──────────────────────────────────────────────────────────────
   { name: "KeepCup", brand: "KeepCup", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/164/972/Untitled-8__75853.1594635668.jpg?c=1" },
   { name: "Stainless Steel Geo 500ml", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/158/853/622898__32954.1580295439.jpg?c=1" },
   { name: "Ecoffee Cup", brand: "Ecoffee Cup®", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/139/589/EcoffeeGroupLogo__30320.1579030218.jpg?c=1" },
@@ -23,6 +26,29 @@ const products: Product[] = [
   { name: "Barista Café Glass Cup 12oz", brand: "ReDrink", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/166/993/OLD488-Cafe-glass-cup-black__95378.1596464290.jpg?c=1" },
   { name: "Takeout Bamboo Double Walled", brand: "ReDrink", category: "Cups", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/165/986/126272a__84234.1594895155.jpg?c=1" },
   { name: "Lake 600 ml", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/163/899/118590__87264.1583921992.jpg?c=1" },
+
+  // ── Bottles · Single-walled ───────────────────────────────────────────────
+  { name: "CamelBak Chute Mag", brand: "Camelbak", category: "Bottles", image: PLACEHOLDER },
+  { name: "Shakermate Protein Shaker", brand: "Shakermate", category: "Bottles", image: PLACEHOLDER },
+  { name: "Aluminium 770ml Sport Bottle with Carabiner", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Grip Sport Bottle 750 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Eco 650 ml Spout Lid Sport Bottle", brand: "H2O Active®", category: "Bottles", image: PLACEHOLDER },
+
+  // ── Bottles · Double-walled ───────────────────────────────────────────────
+  { name: "Canteen - Stainless Steel - 500ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Stainless Steel Sport Bottle 740 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Tritan Bottle 750ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Collapsible Bottle", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Glass Window Bottle", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "540 ml Glass Sport Bottle with Wood Lid", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Recycled Aluminium Drinks Bottle 350ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+
+  // ── Cups ──────────────────────────────────────────────────────────────────
+  { name: "Tulip Tumbler", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
+  { name: "Black Steel Thermo Mug", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
+  { name: "Americano® Tumbler", brand: "Americano®", category: "Cups", image: PLACEHOLDER },
+  { name: "Ceramic Takeout", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
+  { name: "Recycled Takeout Coffee Cup", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
 ];
 
 const brands = ["All", ...Array.from(new Set(products.map((p) => p.brand)))];

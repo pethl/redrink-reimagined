@@ -29,6 +29,7 @@ const heroSlides = [
 ];
 
 const featuredProducts = [
+  { name: "Americano® Tumbler", image: `${import.meta.env.BASE_URL}placeholder.svg` },
   { name: "Ecoffee Cup", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/139/589/EcoffeeGroupLogo__30320.1579030218.jpg?c=1" },
   { name: "Stainless Steel Special 500ml", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/126/410/569498__43195.1578409146.jpg?c=1" },
   { name: "Barista Café Glass Cup 12oz", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/166/993/OLD488-Cafe-glass-cup-black__95378.1596464290.jpg?c=1" },
