@@ -5,6 +5,8 @@ import Layout from "@/components/Layout";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import tulipTumbler from "@/assets/tulip-tumbler.jpg";
+import blackThermoMug from "@/assets/black-thermo-mug.jpg";
+import camelbakChute from "@/assets/camelbak-chute.jpg";
 
 type Product = {
   name: string;
@@ -29,7 +31,7 @@ const products: Product[] = [
   { name: "Lake 600 ml", brand: "ReDrink", category: "Bottles", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/163/899/118590__87264.1583921992.jpg?c=1" },
 
   // ── Bottles · Single-walled ───────────────────────────────────────────────
-  { name: "CamelBak Chute Mag", brand: "Camelbak", category: "Bottles", image: PLACEHOLDER },
+  { name: "CamelBak Chute Mag", brand: "Camelbak", category: "Bottles", image: camelbakChute },
   { name: "Shakermate Protein Shaker", brand: "Shakermate", category: "Bottles", image: PLACEHOLDER },
   { name: "Aluminium 770ml Sport Bottle with Carabiner", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
   { name: "Grip Sport Bottle 750 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
@@ -46,7 +48,7 @@ const products: Product[] = [
 
   // ── Cups ──────────────────────────────────────────────────────────────────
   { name: "Tulip Tumbler", brand: "ReDrink", category: "Cups", image: tulipTumbler },
-  { name: "Black Steel Thermo Mug", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
+  { name: "Black Steel Thermo Mug", brand: "ReDrink", category: "Cups", image: blackThermoMug },
   { name: "Americano® Tumbler", brand: "Americano®", category: "Cups", image: PLACEHOLDER },
   { name: "Ceramic Takeout", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
   { name: "Recycled Takeout Coffee Cup", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
