@@ -10,6 +10,9 @@ import camelbakChute from "@/assets/camelbak-chute.jpg";
 import ceramicTakeout from "@/assets/ceramic-takeout.jpg";
 import shakermate from "@/assets/shakermate.jpg";
 import aluminiumCarabiner from "@/assets/aluminium-carabiner.jpg";
+import gripSportBottle from "@/assets/grip-sport-bottle.jpg";
+import canteenStainless from "@/assets/canteen-stainless.jpg";
+import tritanBottle from "@/assets/tritan-bottle.jpg";
 
 type Product = {
   name: string;
@@ -36,15 +39,15 @@ const products: Product[] = [
 
   // ── Bottles · Single-walled ───────────────────────────────────────────────
   { name: "CamelBak Chute Mag", brand: "Camelbak", category: "Bottles", image: camelbakChute, description: "Hydration made simple. Chute Mag delivers high flow without the mess. The universal cap features a magnetic top that stows securely out of the way when open, is leak-proof when closed, has an easy carry handle, and is compatible with Eddy+ and Hot Cap vessels. Lightweight, durable, and dishwasher safe. BPA, BPS, and BPF free. Available in 600ml, 750ml and 1L capacity. Your logo in a one colour print." },
-  { name: "Shakermate Protein Shaker", brand: "Shakermate", category: "Bottles", image: shakermate, description: "Introducing Shakermate Full Colour – The World's first Full Colour Protein Shaker. Also available in spot colour. This 700ml/24oz Shakermate features an integrated mesh mixer, rounded inner base for easier cleaning, 10 mix & match lid and clip colours and displays capacity levels to either side in ml/oz. Print available front & back." },
+  { name: "Shakermate Protein Shaker", brand: "Shakermate", category: "Bottles", image: shakermate, description: "Introducing Shakermate Full Colour - The World's first Full Colour Protein Shaker. Also available in spot colour. This 700ml/24oz Shakermate features an integrated mesh mixer, rounded inner base for easier cleaning, 10 mix & match lid and clip colours and displays capacity levels to either side in ml/oz. Print available front & back." },
   { name: "Aluminium 770ml Sport Bottle with Carabiner", brand: "ReDrink", category: "Bottles", image: aluminiumCarabiner, description: "Aluminium sport bottle with carabiner. Single wall bottle with twist-on lid. BPA-free aluminium. Carabiner is not suitable for climbing.   Product Spec Sheet" },
-  { name: "Grip Sport Bottle 750 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER, description: "750 ml sport bottle. Single-walled bottle with twist-on lid. Center rubberized grip. Volume capacity is 750 ml. BPA-free aluminium." },
+  { name: "Grip Sport Bottle 750 ml", brand: "ReDrink", category: "Bottles", image: gripSportBottle, description: "750 ml sport bottle. Single-walled bottle with twist-on lid. Center rubberized grip. Volume capacity is 750 ml. BPA-free aluminium." },
   { name: "Eco 650 ml Spout Lid Sport Bottle", brand: "H2O Active®", category: "Bottles", image: PLACEHOLDER },
 
   // ── Bottles · Double-walled ───────────────────────────────────────────────
-  { name: "Canteen - Stainless Steel - 500ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Canteen - Stainless Steel - 500ml", brand: "ReDrink", category: "Bottles", image: canteenStainless, description: "Double-walled, leak-proof stainless steel water bottle/thermo bottle. The handy screw cap is a made of a combination of stainless steel and bamboo. Suitable for maintaining the temperature of cold or hot drinks. Design based on the vintage glass milk bottle. Capacity 500 ml.   Product Spec Sheet" },
   { name: "Stainless Steel Sport Bottle 740 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
-  { name: "Tritan Bottle 750ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Tritan Bottle 750ml", brand: "ReDrink", category: "Bottles", image: tritanBottle, description: "BPA free Tritan water bottle with stainless steel base and screw top and transparent body. Handwash only. 750ml" },
   { name: "Collapsible Bottle", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
   { name: "Glass Window Bottle", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
   { name: "540 ml Glass Sport Bottle with Wood Lid", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
