@@ -8,6 +8,8 @@ import tulipTumbler from "@/assets/tulip-tumbler.jpg";
 import blackThermoMug from "@/assets/black-thermo-mug.jpg";
 import camelbakChute from "@/assets/camelbak-chute.jpg";
 import ceramicTakeout from "@/assets/ceramic-takeout.jpg";
+import shakermate from "@/assets/shakermate.jpg";
+import aluminiumCarabiner from "@/assets/aluminium-carabiner.jpg";
 
 type Product = {
   name: string;
