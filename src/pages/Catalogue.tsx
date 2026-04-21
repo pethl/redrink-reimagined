@@ -17,6 +17,7 @@ import collapsibleBottle from "@/assets/collapsible-bottle.jpg";
 import glassWindowBottle from "@/assets/glass-window-bottle.jpg";
 import americanoTumbler from "@/assets/americano-tumbler.jpg";
 import recycledTakeout from "@/assets/recycled-takeout.jpg";
+import ecoSpoutBottle from "@/assets/eco-spout-bottle.jpg";
 
 type Product = {
   name: string;
@@ -46,7 +47,7 @@ const products: Product[] = [
   { name: "Shakermate Protein Shaker", brand: "Shakermate", category: "Bottles", image: shakermate, description: "Introducing Shakermate Full Colour - The World's first Full Colour Protein Shaker. Also available in spot colour. This 700ml/24oz Shakermate features an integrated mesh mixer, rounded inner base for easier cleaning, 10 mix & match lid and clip colours and displays capacity levels to either side in ml/oz. Print available front & back." },
   { name: "Aluminium 770ml Sport Bottle with Carabiner", brand: "ReDrink", category: "Bottles", image: aluminiumCarabiner, description: "Aluminium sport bottle with carabiner. Single wall bottle with twist-on lid. BPA-free aluminium. Carabiner is not suitable for climbing.   Product Spec Sheet" },
   { name: "Grip Sport Bottle 750 ml", brand: "ReDrink", category: "Bottles", image: gripSportBottle, description: "750 ml sport bottle. Single-walled bottle with twist-on lid. Center rubberized grip. Volume capacity is 750 ml. BPA-free aluminium." },
-  { name: "Eco 650 ml Spout Lid Sport Bottle", brand: "H2O Active®", category: "Bottles", image: PLACEHOLDER },
+  { name: "Eco 650 ml Spout Lid Sport Bottle", brand: "H2O Active®", category: "Bottles", image: ecoSpoutBottle, description: "H2O Eco 650ml spout lid sport bottle made from 100% post-consumer PET scraps. Single-wall sport bottle with ergonomic design. Features a spill-proof lid with flip-top drinking spout. Made in the UK. Mix and match colours to create your perfect bottle. This bottle available in several colours, please get in touch for more colour options." },
 
   // ── Bottles · Double-walled ───────────────────────────────────────────────
   { name: "Canteen - Stainless Steel - 500ml", brand: "ReDrink", category: "Bottles", image: canteenStainless, description: "Double-walled, leak-proof stainless steel water bottle/thermo bottle. The handy screw cap is a made of a combination of stainless steel and bamboo. Suitable for maintaining the temperature of cold or hot drinks. Design based on the vintage glass milk bottle. Capacity 500 ml.   Product Spec Sheet" },
@@ -54,7 +55,7 @@ const products: Product[] = [
   { name: "Tritan Bottle 750ml", brand: "ReDrink", category: "Bottles", image: tritanBottle, description: "BPA free Tritan water bottle with stainless steel base and screw top and transparent body. Handwash only. 750ml" },
   { name: "Collapsible Bottle", brand: "ReDrink", category: "Bottles", image: collapsibleBottle, description: "The revolutionary 550ml single walled collapsible coloured drinks bottle with stainless steel screw top lid. BPA & PVC free. Conforms to articles in contact with food testing. Standard stock colour is black and engraving to lid but Pantone matched options available with additional print option to front.   Product Spec Sheet" },
   { name: "Glass Window Bottle", brand: "ReDrink", category: "Bottles", image: glassWindowBottle, description: "590 ml glass sport bottle. Single-wall clear glass bottle, wrapped with protective silicone sleeve. Screw-on lid with carabiner hook. Dual opening construction allows you to add ice cubes and clean easily. Non-slip. Not suitable for hot beverages. BPA Free.   Product Spec Sheet" },
-  { name: "540 ml Glass Sport Bottle with Wood Lid", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "540 ml Glass Sport Bottle with Wood Lid", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER, description: "540ml glass sport bottle with wood lid. Single-wall, BPA free, borosilicate glass bottle wrapped in a soft grip silicone sleeve. Features a bamboo screw-on lid and a non-slip bottom. Not suitable for use in freezer or microwave. Branding Options: Laser engraving to the silicon front, printing to the glass. Additional laser engraving or printing to the lid." },
   { name: "Recycled Aluminium Drinks Bottle 350ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
 
   // ── Cups ──────────────────────────────────────────────────────────────────
