@@ -13,6 +13,8 @@ import aluminiumCarabiner from "@/assets/aluminium-carabiner.jpg";
 import gripSportBottle from "@/assets/grip-sport-bottle.jpg";
 import canteenStainless from "@/assets/canteen-stainless.jpg";
 import tritanBottle from "@/assets/tritan-bottle.jpg";
+import collapsibleBottle from "@/assets/collapsible-bottle.jpg";
+import glassWindowBottle from "@/assets/glass-window-bottle.jpg";
 
 type Product = {
   name: string;
@@ -48,8 +50,8 @@ const products: Product[] = [
   { name: "Canteen - Stainless Steel - 500ml", brand: "ReDrink", category: "Bottles", image: canteenStainless, description: "Double-walled, leak-proof stainless steel water bottle/thermo bottle. The handy screw cap is a made of a combination of stainless steel and bamboo. Suitable for maintaining the temperature of cold or hot drinks. Design based on the vintage glass milk bottle. Capacity 500 ml.   Product Spec Sheet" },
   { name: "Stainless Steel Sport Bottle 740 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
   { name: "Tritan Bottle 750ml", brand: "ReDrink", category: "Bottles", image: tritanBottle, description: "BPA free Tritan water bottle with stainless steel base and screw top and transparent body. Handwash only. 750ml" },
-  { name: "Collapsible Bottle", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
-  { name: "Glass Window Bottle", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Collapsible Bottle", brand: "ReDrink", category: "Bottles", image: collapsibleBottle, description: "The revolutionary 550ml single walled collapsible coloured drinks bottle with stainless steel screw top lid. BPA & PVC free. Conforms to articles in contact with food testing. Standard stock colour is black and engraving to lid but Pantone matched options available with additional print option to front.   Product Spec Sheet" },
+  { name: "Glass Window Bottle", brand: "ReDrink", category: "Bottles", image: glassWindowBottle, description: "590 ml glass sport bottle. Single-wall clear glass bottle, wrapped with protective silicone sleeve. Screw-on lid with carabiner hook. Dual opening construction allows you to add ice cubes and clean easily. Non-slip. Not suitable for hot beverages. BPA Free.   Product Spec Sheet" },
   { name: "540 ml Glass Sport Bottle with Wood Lid", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
   { name: "Recycled Aluminium Drinks Bottle 350ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
 
