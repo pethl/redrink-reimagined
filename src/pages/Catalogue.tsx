@@ -15,6 +15,8 @@ import canteenStainless from "@/assets/canteen-stainless.jpg";
 import tritanBottle from "@/assets/tritan-bottle.jpg";
 import collapsibleBottle from "@/assets/collapsible-bottle.jpg";
 import glassWindowBottle from "@/assets/glass-window-bottle.jpg";
+import americanoTumbler from "@/assets/americano-tumbler.jpg";
+import recycledTakeout from "@/assets/recycled-takeout.jpg";
 
 type Product = {
   name: string;
@@ -58,9 +60,9 @@ const products: Product[] = [
   // ── Cups ──────────────────────────────────────────────────────────────────
   { name: "Tulip Tumbler", brand: "ReDrink", category: "Cups", image: tulipTumbler },
   { name: "Black Steel Thermo Mug", brand: "ReDrink", category: "Cups", image: blackThermoMug },
-  { name: "Americano® Tumbler", brand: "Americano®", category: "Cups", image: PLACEHOLDER },
+  { name: "Americano® Tumbler", brand: "Americano®", category: "Cups", image: americanoTumbler, description: "Americano® Cortado 300 ml tumbler with grip. Durable, single-walled tumbler with press-on lid and silicone grip. Tumbler has a glass-like appearance with exceptional clarity. EN12875-1 compliant, dishwasher safe, and microwave safe. Volume capacity is 300 ml. Mix and match colours to create your perfect mug. Contact us for additional colour options. Made in the UK. SAN Plastic, PP Plastic, HDPE Plastic, Silicone." },
   { name: "Ceramic Takeout", brand: "ReDrink", category: "Cups", image: ceramicTakeout, description: "A double-walled, vacuum-sealed Takeaway coffee mug. Manufactured from traditional ceramic earthenware but with a contemporary shape and double-walled design. Supplied with press on lid." },
-  { name: "Recycled Takeout Coffee Cup", brand: "ReDrink", category: "Cups", image: PLACEHOLDER },
+  { name: "Recycled Takeout Coffee Cup", brand: "ReDrink", category: "Cups", image: recycledTakeout, description: "Recycled 350ml insulated tumbler. Double-walled construction with twist-on lid. No need for heat sleeve. We believe this is the first 100% recycled, double-walled Coffee Cup to be manufactured in the UK. Manufactured entirely from in-house, 100% recycled, BPA free, PP material. Available in Black only.   Product Spec Sheet" },
 ];
 
 const brands = ["All", ...Array.from(new Set(products.map((p) => p.brand)))];
