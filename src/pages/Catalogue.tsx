@@ -18,6 +18,7 @@ import glassWindowBottle from "@/assets/glass-window-bottle.jpg";
 import americanoTumbler from "@/assets/americano-tumbler.jpg";
 import recycledTakeout from "@/assets/recycled-takeout.jpg";
 import ecoSpoutBottle from "@/assets/eco-spout-bottle.jpg";
+import schoolBottle from "@/assets/school-bottle.jpg";
 
 type Product = {
   name: string;
