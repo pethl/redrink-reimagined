@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Leaf, Recycle, Droplets, ChevronLeft, ChevronRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
+import americanoTumbler from "@/assets/americano-tumbler.jpg";
+import tulipTumblerPair from "@/assets/tulip-tumbler-pair.jpg";
+import stainlessSteelSpecial from "@/assets/stainless-steel-special.jpg";
 
 const heroSlides = [
   {
@@ -29,10 +32,10 @@ const heroSlides = [
 ];
 
 const featuredProducts = [
-  { name: "Americano® Tumbler", image: `${import.meta.env.BASE_URL}placeholder.svg` },
+  { name: "Americano® Tumbler", image: americanoTumbler },
   { name: "Ecoffee Cup", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/139/589/EcoffeeGroupLogo__30320.1579030218.jpg?c=1" },
-  { name: "Stainless Steel Special 500ml", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/126/410/569498__43195.1578409146.jpg?c=1" },
-  { name: "Barista Café Glass Cup 12oz", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/166/993/OLD488-Cafe-glass-cup-black__95378.1596464290.jpg?c=1" },
+  { name: "Stainless Steel Special 500ml", image: stainlessSteelSpecial },
+  { name: "Tulip Tumbler", image: tulipTumblerPair },
   { name: "Takeout Bamboo Double Walled", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/165/986/126272a__84234.1594895155.jpg?c=1" },
   { name: "The Phil Morgan Bottle", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/119/953/beach2-bottle__94396.1592819560.jpg?c=1" },
   { name: "School Bottle - Recycled", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/167/1000/KidsPic__02281.1600078288.jpg?c=1" },
