@@ -17,7 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-     <BrowserRouter basename="/redrink-reimagined">
+    <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/why-reusables" element={<WhyReusables />} />
