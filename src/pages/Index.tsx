@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 import americanoTumbler from "@/assets/americano-tumbler.jpg";
 import tulipTumblerPair from "@/assets/tulip-tumbler-pair.jpg";
 import schoolBottleHome from "@/assets/school-bottle-home.jpg";
-import copperInsulated from "@/assets/copper-insulated.jpg.asset.json";
-import aluminiumVarious from "@/assets/aluminium-various.jpg.asset.json";
+import copperInsulated from "@/assets/copper-insulated.jpg";
+import aluminiumVarious from "@/assets/aluminium-various.jpg";
 
 const heroSlides = [
   {
@@ -35,10 +35,10 @@ const heroSlides = [
 
 const featuredProducts = [
   { name: "Americano® Tumbler", image: americanoTumbler },
-  { name: "Aluminium - various sizes", image: aluminiumVarious.url },
+  { name: "Aluminium - various sizes", image: aluminiumVarious },
   { name: "Tulip Tumbler", image: tulipTumblerPair },
   { name: "Takeout Bamboo Double Walled", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/165/986/126272a__84234.1594895155.jpg?c=1" },
-  { name: "Copper Insulated", image: copperInsulated.url },
+  { name: "Copper Insulated", image: copperInsulated },
   { name: "School Bottle - Recycled", image: schoolBottleHome },
 ];
 
