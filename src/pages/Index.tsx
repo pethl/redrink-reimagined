@@ -6,8 +6,9 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import americanoTumbler from "@/assets/americano-tumbler.jpg";
 import tulipTumblerPair from "@/assets/tulip-tumbler-pair.jpg";
-import stainlessSteelSpecial from "@/assets/stainless-steel-special.jpg";
 import schoolBottleHome from "@/assets/school-bottle-home.jpg";
+import copperInsulated from "@/assets/copper-insulated.jpg.asset.json";
+import aluminiumVarious from "@/assets/aluminium-various.jpg.asset.json";
 
 const heroSlides = [
   {
@@ -34,11 +35,10 @@ const heroSlides = [
 
 const featuredProducts = [
   { name: "Americano® Tumbler", image: americanoTumbler },
-  { name: "Ecoffee Cup", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/139/589/EcoffeeGroupLogo__30320.1579030218.jpg?c=1" },
-  { name: "Stainless Steel - various sizes", image: stainlessSteelSpecial },
+  { name: "Aluminium - various sizes", image: aluminiumVarious.url },
   { name: "Tulip Tumbler", image: tulipTumblerPair },
   { name: "Takeout Bamboo Double Walled", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/165/986/126272a__84234.1594895155.jpg?c=1" },
-  { name: "The Phil Morgan Bottle", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/119/953/beach2-bottle__94396.1592819560.jpg?c=1" },
+  { name: "Copper Insulated", image: copperInsulated.url },
   { name: "School Bottle - Recycled", image: schoolBottleHome },
 ];
 
