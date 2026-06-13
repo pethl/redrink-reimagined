@@ -13,12 +13,12 @@ import flipTopSpout from "@/assets/flip-top-spout.png";
 
 const heroSlides = [
   {
-    image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/1280w/carousel/49/5bottles.jpg?c=1",
+    image: aluminiumVarious,
     headline: "Sustainable Reusable\nBranded Drinkware",
     subtext: "ReThink. ReUse. ReDrink. Beautiful branded drinkware that helps reduce plastic pollution across our planet.",
   },
   {
-    image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/119/953/beach2-bottle__94396.1592819560.jpg?c=1",
+    image: copperInsulated,
     headline: "The Phil Morgan Bottle",
     subtext: "From our artist collaboration series. A celebration of creativity, made for everyday use.",
   },
@@ -28,7 +28,7 @@ const heroSlides = [
     subtext: "8 million tonnes of plastic enter our oceans every year. Reusable drinkware is one of the simplest ways to make a difference.",
   },
   {
-    image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/167/1000/KidsPic__02281.1600078288.jpg?c=1",
+    image: schoolBottleHome,
     headline: "School Bottles – Recycled",
     subtext: "Teach the next generation to reuse. Our recycled school bottles are BPA-free, durable, and fully brandable.",
   },
