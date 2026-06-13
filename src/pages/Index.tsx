@@ -9,6 +9,7 @@ import tulipTumblerPair from "@/assets/tulip-tumbler-pair.jpg";
 import schoolBottleHome from "@/assets/school-bottle-home.jpg";
 import copperInsulated from "@/assets/copper-insulated.jpg";
 import aluminiumVarious from "@/assets/aluminium-various.jpg";
+import flipTopSpout from "@/assets/flip-top-spout.png";
 
 const heroSlides = [
   {
