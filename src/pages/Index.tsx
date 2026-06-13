@@ -38,7 +38,7 @@ const featuredProducts = [
   { name: "Americano® Tumbler", image: americanoTumbler },
   { name: "Aluminium - various sizes", image: aluminiumVarious },
   { name: "Tulip Tumbler", image: tulipTumblerPair },
-  { name: "Takeout Bamboo Double Walled", image: "https://cdn11.bigcommerce.com/s-994v40rsjt/images/stencil/500x659/products/165/986/126272a__84234.1594895155.jpg?c=1" },
+  { name: "Flip Top Spout Aluminium", image: flipTopSpout },
   { name: "Copper Insulated", image: copperInsulated },
   { name: "School Bottle - Recycled", image: schoolBottleHome },
 ];
