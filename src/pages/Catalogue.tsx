@@ -19,6 +19,8 @@ import americanoTumbler from "@/assets/americano-tumbler.jpg";
 import recycledTakeout from "@/assets/recycled-takeout.jpg";
 import ecoSpoutBottle from "@/assets/eco-spout-bottle.jpg";
 import schoolBottle from "@/assets/school-bottle.jpg";
+import aluminiumRed350 from "@/assets/aluminium-red-350.jpg";
+import stainlessSteel740 from "@/assets/stainless-steel-740.png";
 
 type Product = {
   name: string;
@@ -52,12 +54,11 @@ const products: Product[] = [
 
   // ── Bottles · Double-walled ───────────────────────────────────────────────
   { name: "Canteen - Stainless Steel - 500ml", brand: "ReDrink", category: "Bottles", image: canteenStainless, description: "Double-walled, leak-proof stainless steel water bottle/thermo bottle. The handy screw cap is a made of a combination of stainless steel and bamboo. Suitable for maintaining the temperature of cold or hot drinks. Design based on the vintage glass milk bottle. Capacity 500 ml.   Product Spec Sheet" },
-  { name: "Stainless Steel Sport Bottle 740 ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Stainless Steel Sport Bottle 740 ml", brand: "ReDrink", category: "Bottles", image: stainlessSteel740, description: "The Perth 740 ml stainless steel sports bottle is not only a feast for the eyes on any desk but also ideal to use during a walk in the woods. The screw-on top and stainless steel lid with a comfortable silicone handling loop make the bottle easy to carry around. In addition, the cap never gets lost. The white and silver colour combination gives the bottle a stylish look." },
   { name: "Tritan Bottle 750ml", brand: "ReDrink", category: "Bottles", image: tritanBottle, description: "BPA free Tritan water bottle with stainless steel base and screw top and transparent body. Handwash only. 750ml" },
   { name: "Collapsible Bottle", brand: "ReDrink", category: "Bottles", image: collapsibleBottle, description: "The revolutionary 550ml single walled collapsible coloured drinks bottle with stainless steel screw top lid. BPA & PVC free. Conforms to articles in contact with food testing. Standard stock colour is black and engraving to lid but Pantone matched options available with additional print option to front.   Product Spec Sheet" },
   { name: "Glass Window Bottle", brand: "ReDrink", category: "Bottles", image: glassWindowBottle, description: "590 ml glass sport bottle. Single-wall clear glass bottle, wrapped with protective silicone sleeve. Screw-on lid with carabiner hook. Dual opening construction allows you to add ice cubes and clean easily. Non-slip. Not suitable for hot beverages. BPA Free.   Product Spec Sheet" },
-  { name: "540 ml Glass Sport Bottle with Wood Lid", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER, description: "540ml glass sport bottle with wood lid. Single-wall, BPA free, borosilicate glass bottle wrapped in a soft grip silicone sleeve. Features a bamboo screw-on lid and a non-slip bottom. Not suitable for use in freezer or microwave. Branding Options: Laser engraving to the silicon front, printing to the glass. Additional laser engraving or printing to the lid." },
-  { name: "Recycled Aluminium Drinks Bottle 350ml", brand: "ReDrink", category: "Bottles", image: PLACEHOLDER },
+  { name: "Recycled Aluminium Drinks Bottle 350ml", brand: "ReDrink", category: "Bottles", image: aluminiumRed350 },
 
   // ── Cups ──────────────────────────────────────────────────────────────────
   { name: "Tulip Tumbler", brand: "ReDrink", category: "Cups", image: tulipTumbler, description: "Highest quality, double walled, stainless steel Tulip shaped Tumbler, supplied with a clear, closable lid for use on the go. Keeps liquids hot for up to 4 hours and cold for up to 8 hours. Pantone matched body available from low volume. Branding Options: Full colour wrap, metallic tint, photo print, gloss and matt finish options. Contact us for costs." },
